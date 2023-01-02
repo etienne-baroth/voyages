@@ -1,0 +1,575 @@
+
+
+/*body*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+/*-----navbar-----*/
+.box {
+	display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.box .inner {
+	width: 200px;
+	height: 100px;
+	line-height: 100px;
+	font-size: 2em;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.box .inner:first-child {
+	background-color: rgb(110, 110, 110);
+	color: rgb(28, 28, 28);
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+	background-color: rgb(33, 33, 33);
+	color: antiquewhite;
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+nav{
+    width:100%;
+    margin: 0 auto;
+    background-color: rgb(120, 119, 119);
+    position: sticky;
+    top: 0px;
+    opacity: 0.5;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li{
+    flex: 1 1 auto;
+    text-align: center;
+    position: relative;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: darkgray;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px rgb(67, 64, 64);
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: flex;
+    flex-flow: column wrap;
+}
+.sous li{
+    flex: 1 1 auto;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+    background-color: rgb(105, 96, 96);
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+    
+}
+/* accueil */
+.accueil_espagne {
+    width: 100%;
+    height: 100vh;
+    min-height: 970px;
+    background-image: url(images_espagne/fd_espagne.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1px dotted #777;
+    padding-top: 1px;
+
+}
+.logo-espagne {
+    border-radius: 50%;
+    width: 180px;
+    display: block;
+    margin: 179px auto 0;
+}
+.accueil_espagne h1 {
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 0 0 10px #000;
+    color: #f1f1f1;
+    margin-top: 10px;
+    font-family: Merienda, sans-serif;
+}
+.sous-titre {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #f1f1f1;
+    margin: 5px 0;
+    text-shadow: 0 0 10px #000;
+}
+.btn-accueil {
+    border-radius: 9999px;
+    background: crimson;
+    border: 1px solid #333;
+    color:#f1f1f1;
+    text-align: center;
+    font-size: 22px;
+    display:block;
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    text-decoration: none;
+    margin: 30px auto 0;
+    transition: all 0.2s ease-in-out;
+
+}
+.btn-accueil:hover {
+    background: rgb(177,0,36);
+    color: #fff;
+
+}
+@media screen and (max-width: 850px) {
+    .accueil_espagne {
+        height: 650px;
+        min-height: auto;
+        background-position: right;
+    }
+    .logo-espagne {
+        margin: 120px auto 0;
+
+    }
+    .accueil_espagne h1 {
+        font-size: 60px;
+    }
+    .sous-titre {
+        font-size: 23px;
+    }
+    .btn-accueil {
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+        margin: 15px auto 0;
+
+    }
+}
+@media screen and (max-width: 400px) {
+    .accueil_espagne {
+        height: 550px;
+        
+    }
+    .logo-espagne {
+        width: 150px;
+        margin: 110px auto 0;
+
+    }
+    .accueil_espagne h1 {
+        font-size: 35px;
+    }
+    .sous-titre {
+        font-size: 20px;
+    }
+    .btn-accueil {
+        width: 130px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 16px;
+    }
+    .logo-menu {
+        top: 15px;
+        width: 40px;
+    }
+}
+/* -----------Section Asymétrique--------------*/
+.section-asymetrique {
+    display: grid;
+    grid-template: 200px repeat(3, auto) / 1fr 600px 1fr;
+    background: #f1f1f1;
+}
+.section-asymetrique h4 {
+    grid-area: 1 / 1 / 2 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+
+}
+/* ---------Placement -----------*/
+.bloc-1,
+.img-grid-1 {
+    grid-area: 2 / 2 / 3 / 3;
+
+}
+.bloc-right,
+.img-grid-2 {
+    /* debut row debut col fin row fin col*/
+    grid-area: 3 / 2 / 4 / 3;
+}
+.bloc-3,
+.img-grid-3 {
+    grid-area: 4 / 2 / 5 / 3;
+
+}
+.bloc {
+    background: rgba(36, 35, 47, 0.894);
+    color: #f1f1f1;
+    position: relative;
+    border-radius: 2px;
+    height: 750px;
+    margin-bottom: 250px;
+
+}
+.img-grid {
+    width: 500px;
+    height: 700px;
+    object-fit: cover;
+    position: relative;
+}
+.img-grid-1,
+.img-grid-3 {
+    top: 130px;
+    left: 20px;
+}
+.bloc-left {
+    left: -300px;
+}
+.bloc-txt-left {
+    width: 50%;
+    height: 100%;
+
+}
+.bloc-txt-left h3 {
+    white-space: nowrap;
+    font-size: 35px;
+    margin: 30px 15px;
+
+}
+.bloc-txt-left p {
+    line-height: 40px;
+    padding: 15px;
+}
+a {
+    color:white;
+    text-decoration: none;
+}
+.bloc button {
+    border-radius: 9999px;
+    outline: none;
+    border: none;
+    background: crimson;
+    border: 1px solid #333;
+    color: #f1f1f1;
+    padding: 20px 35px;
+    font-size: 20px;
+    margin: 35px auto;
+    cursor: pointer;
+    display: block;
+}
+.bloc-right {
+    right: -300px;
+
+}
+.img-grid-2 {
+    top: 130px;
+    left: 100px;
+}
+.bloc-txt-right {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+
+}
+.bloc-txt-right h3 {
+    position: relative;
+    font-size: 35px;
+    margin: 30px 15px;
+
+}
+.bloc-txt-right p {
+    line-height: 40px;
+    padding: 15px;
+}
+.bloc-txt-right button {
+    margin: 5px auto;
+}
+/* -------------Lignes verticales------------- */
+
+
+@media screen and (max-width: 1200px) {
+    .section-asymetrique {
+        grid-template: 200px repeat(6, auto) 100px / 1fr 600px 1fr;
+    }
+    .section-asymetrique h2 {
+        font-size: 50px;
+        padding-bottom: 0px;
+    }
+    .bloc-1 {
+        grid-area: 2 / 2 / 3/ 3;
+    }
+    .img-grid-1 {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+    .bloc-right {
+        grid-area: 4 / 2 / 5 / 3;
+    }
+    .img-grid-2 {
+        grid-area: 5 / 2 / 6 / 3;
+    }
+    .bloc-3 {
+        grid-area: 6 / 2 / 7 / 3;
+    }
+    .img-grid-3 {
+        grid-area: 7 / 2 / 8 / 3;
+    }
+    .bloc {
+        height: 100%;
+        margin-bottom: 0px;
+    }
+    .img-grid {
+        position: static;
+        width: 600px;
+        height: 750px;
+    }
+    .img-grid-1,
+    .img-grid-3 {
+        top :0px;
+        left: 0px;
+    }
+    .img-grid-2 {
+        top: 0px;
+        left: 0px;
+    }
+    .bloc-left {
+        left: 0px;
+    }
+    .bloc-right {
+        right: 0px;
+    }
+    .bloc-txt-left {
+        width: 100%;
+        height: 100%;
+    }
+    .bloc-txt-left h3, 
+    .bloc-txt-right h3 {
+        text-align: center;
+    }
+    .bloc-txt-left p,
+    .bloc-txt-right p {
+        font-size: 20px;
+        line-height: 1.8;
+        padding: 15px;
+    }
+    .bloc button {
+        font-size: 20px;
+        padding: 15px 30px;
+        margin-bottom: 30px;
+    }
+    .bloc-txt-right {
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+@media screen and (max-width: 600px) {
+      .section-asymetrique {
+          grid-template: 150px repeat(6, auto) 100px / 100% ; /*on aura avec 100% une seule colonne qui prendra la largeur*/
+
+      }
+      .ligne-gauche, .ligne-droite {
+          display: none;
+      }
+      .section-asymetrique h2 {
+          font-size: 30px;
+      }
+      .bloc,
+      .img-grid {
+          grid-area: auto;
+      }
+      .img-grid {
+          width: 100%;
+          height: 500px;
+
+      }
+      .bloc-txt-left h3,
+      .bloc-txt-right h3 {
+          font-size: 25px;
+
+      }
+      
+      .bloc-txt-right {
+          width: 100%;
+      }
+}
+
+/* -------------Section parallax ---*/
+
+.parallax {
+    width: 100%;
+    height: 300px;
+    background: url(images_japon/parallax-large.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* centre au milieu de l image*/
+    flex-direction: column; /*texte les uns au dessus des autres */
+
+}
+.parallax p {
+    font-size: 65px;
+    color: #f1f1f1;
+}
+.parallax span {
+    display: block;
+    font-size: 25px;
+    color: #f1f1f1;
+}
+@media screen and (max-width: 400px) {
+    .parallax p {
+        font-size: 55px;
+    }
+}
+
+
+
+/*-------------Section Contact --------*/
+
+.section-contact {
+    padding-bottom: 100px;
+
+}
+.section-contact h2 {
+    text-align: center;
+    color: #333;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    padding: 70px 0 0 0;
+}
+.container-form {
+    margin: 0 auto;
+    width: 70%;
+}
+.form-groupe {
+    position: relative;
+    margin-bottom: 45px;
+}
+.form-groupe label {
+    color: #aaa;
+    font-size: 20px;
+
+}
+.form-groupe input {
+    display:block;
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px solid #aaa;
+    color: #666;
+    font-size: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border: 3px solid #aaa;
+    border-radius: 3px;
+    padding: 5px;
+    resize: none; /* ne redimensionne pas la zone de texte par l utilisateur */
+    outline: none;
+    font-size: 20px;
+    background: #f1f1f1;
+
+}
+.form-groupe:nth-child(4) {
+    margin-bottom: 25px;
+
+}
+.form-groupe .button-sub {
+    display: block;
+    width: auto;
+    padding: 15px 60px;
+    border: 3px solid rgb(144,144,144);
+    border-radius: 9999px;
+    background-image: linear-gradient(to right, transparent 50%, rgb(65,65,65) 50%, rgb(134,134,134));
+    background-size: 200%;
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+
+}
+.form-groupe .button-sub:hover {
+    color: #fff;
+    background-position: 100%;
+    border: 3px solid #fff;
+}
+@media screen and(max-width: 1300px) {
+    .section-contact h2 {
+        padding: 70px 0 0 0;
+
+    }
+    .container-form {
+        padding-left:  0;
+    }
+}
+
