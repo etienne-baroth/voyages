@@ -1,0 +1,94 @@
+body {
+    font-family: 'Caveat', cursive;
+    font-size: x-large;
+    text-align: justify;
+}
+
+/* MAIN CONTENT */
+
+h1 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+p {
+    margin: 5%;
+    text-align: justify;
+}
+
+.grille {
+    max-width: 1000px;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+.grille-pic {
+    width: 300px;
+    height: 200px;
+}
+
+.toronto-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.grille-back {
+    background-color: #4b5c4f;
+    padding: 2%;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #4b5c4f;
+    padding: 5%;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid orange;
+    padding: 2%;
+    font-weight: bold;
+    color: orange;
+}
+
+.footer-img {
+    max-width: 150px;
+    max-height: 200px;
+    margin: 5px;
+}
+
+.photo-etienne {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.footer-txt {
+    margin: 5px;
+}
+
+/* MEDIA SCREEN */
+
+@media (max-width: 440px) {
+    .footer-box {
+        flex-direction: column;
+    }
+    .footer-txt {
+        text-align: center;
+    }
+}

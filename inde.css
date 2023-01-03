@@ -1,3 +1,212 @@
+body {
+    font-family: 'Caveat', cursive;
+    font-size: x-large;
+    text-align: justify;
+    background: rgb(251,192,63);
+    background: radial-gradient(circle, rgba(251,192,63,0.894016981792717) 25%, rgba(252,158,70,1) 89%);
+}
+
+/* BARRE DE NAVIGATION A GAUCHE */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     position: fixed;
+    bottom: 1%;
+    left: 1%;
+    background-color: #60b020;
+    padding-right: 5px;
+    list-style-type: none;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    opacity: 80%;
+}
+
+li {
+    padding-bottom: 5%;
+}
+
+li:last-child {
+    padding-bottom: 0;
+}
+
+
+/* CONTENU DE LA PAGE */
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    margin: 20px;
+}
+
+#txt-intro {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.fillin {
+    width: 3000px;
+}
+
+.imgmumbai {
+    margin: 20px;
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.imgladakh {
+    margin: 20px;
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.imgrajasthan {
+    margin: 20px;
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.region1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:center;
+    align-items: center;
+}
+
+.region2 {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+.region3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:center;
+    align-items: center;
+}
+
+/* FORM */
+
+.form {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border: solid 5px #60b020;
+    border-radius: 10px;
+    background-color: #60b020;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    }
+    
+    form {
+    border-radius: 10px;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    }
+    
+    input {
+
+    box-sizing: border-box;
+    padding: 5px;
+    border: #fee39c;
+    border-radius: 10px;
+    font-family: 'Caveat', cursive;
+    font-size: larger;
+    }
+    
+    #formmsg {
+    padding: 15%;
+    }
+    
+    button {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(251,192,63);
+    border-radius: 5px;
+    border: #fee39c;
+    padding: 12px;
+    font-family: 'Caveat', cursive;
+    font-size: larger;
+    }
+
+
+/* FOOTER */
+
+footer {
+    background-color: #4b5c4f;
+    padding: 5%;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid orange;
+    padding: 2%;
+    font-weight: bold;
+    color: orange;
+}
+
+.footer-img {
+    max-width: 150px;
+    max-height: 200px;
+    margin: 5px;
+}
+
+.photo-etienne {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.footer-txt {
+    margin: 5px;
+}
+
+/* MEDIA SCREEN */
+
+@media (max-width: 1580px) {
+    .region1 {
+        flex-direction: column;
+        height: auto;
+    }
+    .region2 {
+        flex-direction: column;
+        height: auto;
+    }
+    .region3 {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media (max-width: 440px) {
+    .footer-box {
+        flex-direction: column;
+    }
+    .footer-txt {
+        text-align: center;
+    }
 }
