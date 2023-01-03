@@ -185,6 +185,14 @@ nav > ul li:hover .sous{
     margin-bottom:5%;
     font-family: Merienda, sans-serif;
 }
+.corps_tanzanie span{
+    color:brown;
+    
+}
+.corps_tanzanie span:hover{
+    color:black;
+    
+}
 /*-----------------video masssai----------------*/
 iframe{
     width:40%;
@@ -248,4 +256,7 @@ section{
     float: right;
     margin-top:5%;
     
+  }
+  .card2:hover {
+    box-shadow: 10px 5px 15px black;
   }
