@@ -188,12 +188,11 @@ nav > ul li:hover .sous{
 }
 .corps_tanzanie span{
     color:brown;
+    font-family: Merienda, sans-serif;
     
 }
-.corps_tanzanie span:hover{
-    color:black;
-    
-}
+
+
 /*-----------------video masssai----------------*/
 iframe{
     width:40%;
