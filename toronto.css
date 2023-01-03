@@ -49,6 +49,38 @@ p {
 }
 
 
+/* CONTAINER */
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    shape-outside: margin-box;
+    margin: 0 15px 5px 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px grey ;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container h1 {
+    margin-bottom: 10px;
+
+}
+
+.container p {
+    line-height: 1.5;
+}
+
+
 /* FOOTER */
 
 footer {
@@ -69,7 +101,7 @@ footer {
 .footer-img {
     max-width: 150px;
     max-height: 200px;
-    margin: 5px;
+    margin: 50px;
 }
 
 .photo-etienne {
