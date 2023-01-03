@@ -76,7 +76,7 @@ nav{
     background-color: rgb(120, 119, 119);
     position: sticky;
     top: 0px;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 nav ul{
@@ -134,6 +134,3 @@ nav > ul li:hover .sous{
     font-size: 12px;
     
 }
-
-
-
