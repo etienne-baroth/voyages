@@ -71,12 +71,12 @@ h1{
 	}
 }
 nav{
-    width:100%;
+    width:80%;
     margin: 0 auto;
-    background-color: rgb(120, 119, 119);
+    background-color: rgb(255, 255, 255);
     position: sticky;
     top: 0px;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 nav ul{
@@ -93,21 +93,20 @@ nav ul li{
 nav a{
     display: block;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: black;
     border-bottom: 2px solid transparent;
     padding: 10px 0px;
 }
 
 nav a:hover{
-    color: rgb(0, 0, 0);
-    border-bottom: 2px solid rgb(0, 0, 0);
-    background-color: darkgray;
+    color: orange;
+    border-bottom: 2px solid gold;
 }
 
 .sous{
     display: none;
-    box-shadow: 0px 1px 2px rgb(67, 64, 64);
-    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
     position: absolute;
     width: 100%;
     z-index: 1000;
@@ -123,7 +122,6 @@ nav > ul li:hover .sous{
 .sous a{
     padding: 10px;
     border-bottom: none;
-    background-color: rgb(105, 96, 96);
 }
 .sous a:hover{
     border-bottom: none;
@@ -132,8 +130,5 @@ nav > ul li:hover .sous{
 .deroulant > a::after{
     content:" ▼";
     font-size: 12px;
-    
 }
-
-
 
