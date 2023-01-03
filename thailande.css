@@ -62,12 +62,10 @@ h2{
     border-radius: 10%;
 }
 .sud{
-    background-image: url('images thailande/le\ sud.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 300px;
+background-image: url('images thailande/cascade.jpg');
+background-size: cover;
+width: 100%;
+height: 300px;
 }
 .title{
     color: red;
