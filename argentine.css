@@ -11,9 +11,12 @@ h1{
     font-size: 8em;
 }
 .argentine{
-display: flex;
-justify-content: space-between;
-background-color: rgb(102, 214, 229);
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(102, 214, 229);
+}
+.buenosaires{
+    background-image: url('images argentine/buenos aire.jpg');
 }
 
 .box {
