@@ -224,8 +224,8 @@ main h1,h2,h3,span,a,b,p{
 }
 .btn-accueil {
     border-radius: 9999px;
-    background: crimson;
-    border: 1px solid #333;
+    
+    
     color:#f1f1f1;
     text-align: center;
     font-size: 22px;
@@ -238,11 +238,7 @@ main h1,h2,h3,span,a,b,p{
     transition: all 0.2s ease-in-out;
 
 }
-.btn-accueil:hover {
-    background: rgb(177,0,36);
-    color: #fff;
 
-}
 @media screen and (max-width: 850px) {
     .accueil {
         height: 650px;
