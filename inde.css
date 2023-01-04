@@ -6,7 +6,7 @@ body {
     background: radial-gradient(circle, rgba(251,192,63,0.894016981792717) 25%, rgba(252,158,70,1) 89%);
 }
 
-/* BARRE DE NAVIGATION A GAUCHE */
+/* SIDENAV */
 
 a {
     text-decoration: none;
@@ -40,7 +40,7 @@ li:last-child {
 }
 
 
-/* CONTENU DE LA PAGE */
+/* MAIN */
 
 h1 {
     text-align: center;
