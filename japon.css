@@ -182,6 +182,11 @@ background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
     color:#000
 }
 /*------------------fin header--------------*/
+/*-------------main-------------*/
+main h1,h2,h3,span,a,b,p{
+    font-family: Merienda, sans-serif;
+    padding-bottom:3%;
+}
 /* accueil */
 .accueil {
     width: 100%;
@@ -552,89 +557,32 @@ a {
 
 
 
-/*-------------Section Contact --------*/
-
-.section-contact {
-    padding-bottom: 100px;
-
+.text_bas_japon{
+    width:80%;
+    margin:auto;
+    padding-top: 2%;
+    
 }
-.section-contact h2 {
+.text_bas_japon>p{
+    font-family: Merienda, sans-serif;
+}
+.text_bas_japon>h4{
     text-align: center;
-    color: #333;
-    font-size: 48px;
-    font-weight: 400;
-    margin-bottom: 50px;
-    padding: 70px 0 0 0;
+    animation: defilement_japon 10s infinite ;
+    background-color: #9F391A;
+    width:500px;
+    color:white;
 }
-.container-form {
-    margin: 0 auto;
-    width: 70%;
-}
-.form-groupe {
-    position: relative;
-    margin-bottom: 45px;
-}
-.form-groupe label {
-    color: #aaa;
-    font-size: 20px;
-
-}
-.form-groupe input {
-    display:block;
-    width: 100%;
-    padding: 10px 0px;
-    border: none;
-    outline: none;
-    background: none;
-    border-bottom: 3px solid #aaa;
-    color: #666;
-    font-size: 20px;
-}
-
-textarea {
-    width: 100%;
-    height: 200px;
-    border: none;
-    border: 3px solid #aaa;
-    border-radius: 3px;
-    padding: 5px;
-    resize: none; /* ne redimensionne pas la zone de texte par l utilisateur */
-    outline: none;
-    font-size: 20px;
-    background: #f1f1f1;
-
-}
-.form-groupe:nth-child(4) {
-    margin-bottom: 25px;
-
-}
-.form-groupe .button-sub {
-    display: block;
-    width: auto;
-    padding: 15px 60px;
-    border: 3px solid rgb(144,144,144);
-    border-radius: 9999px;
-    background-image: linear-gradient(to right, transparent 50%, rgb(65,65,65) 50%, rgb(134,134,134));
-    background-size: 200%;
-    color: #333;
-    font-size: 24px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
-
-}
-.form-groupe .button-sub:hover {
-    color: #fff;
-    background-position: 100%;
-    border: 3px solid #fff;
-}
-@media screen and(max-width: 1300px) {
-    .section-contact h2 {
-        padding: 70px 0 0 0;
-
+@keyframes defilement_japon{
+    30%{
+        margin-left:-600px;
+        background-color: #9F391A;
+        opacity:0;
     }
-    .container-form {
-        padding-left:  0;
+   
+    100%{
+        
+        background-color: #9F391A;
+        
     }
 }
-
