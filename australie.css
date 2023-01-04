@@ -101,13 +101,7 @@ justify-content: flex-start;
     padding: 20px;
 
 }
-/*.fauneimg{
-   background-color: burlywood;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 300px;
-}*/
+
 
 .faunetxt{
     background-color: rgba(222, 184, 135, 0.612);
@@ -121,11 +115,13 @@ justify-content: flex-start;
    
 }
 /* menu*/
+/*------header-----*/
 .box {
 	display: flex;
     justify-content: center;
     margin-bottom: 20px;
     margin-top: 10px;
+    padding-top: 30px;
 }
 
 .box .inner {
@@ -138,47 +134,45 @@ justify-content: flex-start;
 	white-space: nowrap;
 	overflow: hidden;
 }
-
 .box .inner:first-child {
 	background-color: rgb(110, 110, 110);
 	color: rgb(28, 28, 28);
 	transform-origin: right;
 	transform: perspective(100px) rotateY(-15deg);
 }
-
 .box .inner:last-child {
 	background-color: rgb(33, 33, 33);
 	color: antiquewhite;
 	transform-origin: left;
 	transform: perspective(100px) rotateY(15deg);
 }
-
 .box .inner span {
 	position: absolute;
 	animation: marquee 5s linear infinite;
 }
-
 .box .inner:first-child span {
 	animation-delay: 2.5s;
 	left: -100%;
 }
-
 @keyframes marquee {
 	from {
 		left: 100%;
 	}
-
 	to {
 		left: -100%;
 	}
 }
-nav{
+/*----------------nav----*/ 
+.nav{
     width:100%;
     margin: 0 auto;
     background-color: rgb(120, 119, 119);
     position: sticky;
     top: 0px;
     opacity: 0.7;
+    margin-top:5%;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul{
@@ -186,56 +180,122 @@ nav ul{
     display: flex;
 }
 
-nav ul li{
-    flex: 1 1 auto;
-    text-align: center;
-    position: relative;
+#menu, #menu ul {
+  padding:0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+
+
 }
 
-nav a{
-    display: block;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    border-bottom: 2px solid transparent;
-    padding: 10px 0px;
+#menu li {
+  display:inline-block;
+  vertical-align: top;
+  position: relative;
+
+
+}
+#menu li li {
+  display:inherit;
+}
+#menu a {
+  display:block;
+  padding:5px 50px;
+  text-decoration: none;
+  color:#fff;
+  font-family:arial;
+}
+#menu ul li a {
+  padding:5px 8px;
+}
+#menu ul {
+  position: absolute;
+  z-index: 1000;
+  min-width:100%;
+  white-space: nowrap;
+  text-align: left;
+
+}
+#menu ul ul {
+  left:100%;
+  top:0;
+  overflow: hidden;
+  max-width: 0;
+  min-width: 0;
+  transition: 0.3s all;
+}
+#menu ul li:hover ul {
+  max-width: 30em;
+}
+#menu ul li {
+  max-height:0;
+  overflow: hidden;
+  transition:all 0.8s;
+}
+#menu li li li {
+  max-height: inherit;
+}
+#menu li:hover li {
+  max-height: 15em;
+  overflow: visible;
 }
 
-nav a:hover{
-    color: rgb(0, 0, 0);
-    border-bottom: 2px solid rgb(0, 0, 0);
-    background-color: darkgray;
-}
 
-.sous{
-    display: none;
-    box-shadow: 0px 1px 2px rgb(67, 64, 64);
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    width: 100%;
-    z-index: 1000;
+/* background des liens menus */
+.violet {
+background-color: #65537A;
+background-image:linear-gradient(to bottom, #65537A 0%, #2A2333 100%);
 }
-nav > ul li:hover .sous{
-    display: flex;
-    flex-flow: column wrap;
+.violet li {
+    background:#2A2333
 }
-.sous li{
-    flex: 1 1 auto;
-    text-align: left;
+.violet li:hover {
+    background:#65537A
 }
-.sous a{
-    padding: 10px;
-    border-bottom: none;
-    background-color: rgb(105, 96, 96);
+.bleu {
+background-color: #729EBF;
+background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
 }
-.sous a:hover{
-    border-bottom: none;
-    background-color: RGBa(200,200,200,0.1);
+.bleu li {
+    background:#333A40
 }
-.deroulant > a::after{
-    content:" ▼";
-    font-size: 12px;
-    
+.bleu li:hover {
+    background:#729EBF
 }
+.orange {
+background-color: #F6AD1A;
+background-image:linear-gradient(to bottom, #F6AD1A 0%, #9F391A 100%);
+}
+.orange li {
+    background-color:#9F391A;
+}
+.orange li:hover {
+    background:#F6AD1A
+}
+.vert{
+background-color: #CFFF6A;
+background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
+}
+.vert li {
+    background-color:#677F35
+}
+.vert li:hover {
+    background:#CFFF6A
+}
+#menu li:hover {
+    background-image:none;
+}
+#menu li:hover a, .menu li li:hover a {
+    color:#000
+}
+#menu li:hover li a, #menu li:hover li li a {
+    color:#fff
+}
+#menu li:hover a, #menu li li:hover a, #menu li li li:hover a {
+    color:#000
+}
+/*------------------fin header--------------*/
 
 
 
