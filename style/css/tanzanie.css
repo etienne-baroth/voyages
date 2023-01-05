@@ -4,20 +4,7 @@
     padding: 0px;
     font-family: Avenir, sans-serif;
 }
-.fond_ecran{
-    width: 100%;
-    height: 455px;
-    background-image: url('images/main.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 
-}
-
-h1{
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
 .box {
 	display: flex;
@@ -253,7 +240,7 @@ background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
     width: 100%;
     height: 100vh;
     min-height: 970px;
-    background-image: url(images_tanzanie/fond_ecran_tanzanie.jpg);
+    background-image: url('/style/images/images_tanzanie/fond_ecran_tanzanie.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -315,7 +302,7 @@ iframe{
 
 /*-------------------card-------*/
 section{
-    background-image: url('images_tanzanie/kilimanjaro.png');
+    background-image: url('/style/images/images_tanzanie/kilimanjaro.png');
     width: 80%;
     height:auto;  
     
