@@ -11,27 +11,17 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-<<<<<<< HEAD
 }
 h1{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-=======
-
-}
-
-/*------header-----*/
->>>>>>> e738a0840f4e173bff05aaaeea34cba8cbfa4575
 .box {
 	display: flex;
     justify-content: center;
     margin-bottom: 20px;
-<<<<<<< HEAD
     margin-top: 10px;
-=======
->>>>>>> e738a0840f4e173bff05aaaeea34cba8cbfa4575
     padding-top: 30px;
 }
 
@@ -45,71 +35,40 @@ h1{
 	white-space: nowrap;
 	overflow: hidden;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> e738a0840f4e173bff05aaaeea34cba8cbfa4575
 .box .inner:first-child {
 	background-color: rgb(110, 110, 110);
 	color: rgb(28, 28, 28);
 	transform-origin: right;
 	transform: perspective(100px) rotateY(-15deg);
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> e738a0840f4e173bff05aaaeea34cba8cbfa4575
 .box .inner:last-child {
 	background-color: rgb(33, 33, 33);
 	color: antiquewhite;
 	transform-origin: left;
 	transform: perspective(100px) rotateY(15deg);
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> e738a0840f4e173bff05aaaeea34cba8cbfa4575
 .box .inner span {
 	position: absolute;
 	animation: marquee 5s linear infinite;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> e738a0840f4e173bff05aaaeea34cba8cbfa4575
 .box .inner:first-child span {
 	animation-delay: 2.5s;
 	left: -100%;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> e738a0840f4e173bff05aaaeea34cba8cbfa4575
 @keyframes marquee {
 	from {
 		left: 100%;
 	}
-<<<<<<< HEAD
-=======
-
->>>>>>> e738a0840f4e173bff05aaaeea34cba8cbfa4575
 	to {
 		left: -100%;
 	}
 }
 /*----------------nav----*/ 
 .nav{
-<<<<<<< HEAD
   width:100%;
   margin-top: 5%;
   display: flex;
   justify-content: center;
-=======
-    width:100%;
-    margin-top:5%;
-    display: flex;
-    justify-content: center;
->>>>>>> e738a0840f4e173bff05aaaeea34cba8cbfa4575
 }
 
 #menu, #menu ul {
@@ -117,11 +76,6 @@ h1{
   margin: 0;
   list-style: none;
   text-align: center;
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> e738a0840f4e173bff05aaaeea34cba8cbfa4575
 
 }
 
@@ -129,13 +83,8 @@ h1{
   display:inline-block;
   vertical-align: top;
   position: relative;
-<<<<<<< HEAD
 
 
-=======
-  
-  
->>>>>>> e738a0840f4e173bff05aaaeea34cba8cbfa4575
 }
 #menu li li {
   display:inherit;
@@ -239,10 +188,6 @@ background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
 /*------------------fin header--------------*/
 
 
-<<<<<<< HEAD
-
-
-=======
 /*-------------Section Contact --------*/
 
 .section-contact {
@@ -328,4 +273,3 @@ textarea {
       padding-left:  0;
   }
 }
->>>>>>> e738a0840f4e173bff05aaaeea34cba8cbfa4575
