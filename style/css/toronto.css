@@ -182,10 +182,10 @@ background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
 
 /* MAIN */
 
-body {
+.font-family-caveat {
     font-family: 'Caveat', cursive;
     margin: 0;
-    padding: 0;
+    padding: 15px;
     font-size: x-large;
     text-align: justify;
     background-color: lightgrey;
@@ -193,6 +193,7 @@ body {
 
 h1 {
     text-align: center;
+    margin-block-start: 0;
 }
 
 h2 {

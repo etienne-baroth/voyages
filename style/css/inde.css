@@ -182,11 +182,11 @@ background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
 
 /* BODY */
 
-body {
+.font-family-caveat {
     font-family: 'Caveat', cursive;
     font-size: x-large;
     margin: 0;
-    padding: 0;
+    padding: 15px;
     text-align: justify;
     background: rgb(251,192,63);
     background: radial-gradient(circle, rgba(251,192,63,0.894016981792717) 25%, rgba(252,158,70,1) 89%);
@@ -230,6 +230,7 @@ li:last-child {
 
 h1 {
     text-align: center;
+    margin-block-start: 0;
 }
 
 h2 {
