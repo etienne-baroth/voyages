@@ -5,7 +5,7 @@
     font-family: Avenir, sans-serif;
 }
 body{
-    background-image: url('/style/images/images australie/earth.jpg');
+    background-image: url('../images/images australie/earth.jpg');
     width: 100%;
     height: auto;
 }

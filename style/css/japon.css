@@ -192,7 +192,7 @@ main h1,h2,h3,span,a,b,p{
     width: 100%;
     height: 100vh;
     min-height: 970px;
-    background-image: url('/style/images/images_japon/ville_japon.jpg');
+    background-image: url('../images/images_japon/ville_japon.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

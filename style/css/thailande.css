@@ -22,7 +22,7 @@ h1{
     text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
 .bangkok{
-    background-image: url('/style/images/images thailande/palais\ royal.jpg');
+    background-image: url('../images/images thailande/palais\ royal.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
