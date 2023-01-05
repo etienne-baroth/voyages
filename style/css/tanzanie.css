@@ -240,7 +240,7 @@ background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
     width: 100%;
     height: 100vh;
     min-height: 970px;
-    background-image: url('/style/images/images_tanzanie/fond_ecran_tanzanie.jpg');
+    background-image: url('../images/images_tanzanie/fond_ecran_tanzanie.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
