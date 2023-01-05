@@ -23,7 +23,7 @@ h2{
     text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
 #drapeau{
-    background-image: url('/style/images/images australie/drapeau.png');
+    background-image: url('../images/images australie/drapeau.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -37,7 +37,7 @@ justify-content: flex-start;
 
 }
 .sydneyimg{
-    background-image: url('/style/images/images australie/sydney.jpg');
+    background-image: url('../images/images australie/sydney.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     width: 50%;
@@ -60,7 +60,7 @@ justify-content: flex-start;
     justify-content: space-between;
 }
 .bushimg{
-    background-image: url('/style/images/images australie/bush.jpg');
+    background-image: url('../images/images australie/bush.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
@@ -82,7 +82,7 @@ justify-content: flex-start;
     justify-content: flex-start;
 }
 .côteimg{
-    background-image: url('/style/images/images australie/plage.jpg');
+    background-image: url('../images/images australie/plage.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;

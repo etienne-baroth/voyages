@@ -62,7 +62,7 @@ h2{
     border-radius: 10%;
 }
 .sud{
-background-image: url('/style/images/images thailande/cascade1.png');
+background-image: url('../images/images thailande/cascade1.png');
 background-size: cover;
 background-position: bottom;
 width: 100%;
@@ -95,7 +95,7 @@ height: 300px;
     border-radius: 10%;     
 }
 .nord{
-    background-image: url('/style/images/images thailande/riz.jpg');
+    background-image: url('../images/images thailande/riz.jpg');
     background-size: cover;
     background-position: bottom;
     width: 100%;

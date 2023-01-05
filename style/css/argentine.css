@@ -42,7 +42,7 @@ h2{
     border-radius: 3%;
 }
 .patagonie{
-    background-image: url('/style/images/images argentine/patagonie.jpg');
+    background-image: url('../images/images argentine/patagonie.jpg');
     width: 100%;
     height: 900px;
     padding-top: 50px;
@@ -56,7 +56,7 @@ h2{
     border-radius: 3%;
 }
 .iguazu{
-    background-image: url('/style/images/images argentine/iguazu1.jpg');
+    background-image: url('../images/images argentine/iguazu1.jpg');
     background-size: cover;
     width: 100%;
     height: 700px;
@@ -71,7 +71,7 @@ h2{
     border-radius: 3%;
 }
 .ushuaia{
-    background-image: url('/style/images/images argentine/ushuaia1.jpg');
+    background-image: url('../images/images argentine/ushuaia1.jpg');
     width: 100%;
     height: 900px;
     padding-top: 50px;
