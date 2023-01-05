@@ -1,0 +1,396 @@
+/*body*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+
+.box {
+	display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.box .inner {
+	width: 200px;
+	height: 100px;
+	line-height: 100px;
+	font-size: 2em;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.box .inner:first-child {
+	background-color: rgb(110, 110, 110);
+	color: rgb(28, 28, 28);
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+	background-color: rgb(33, 33, 33);
+	color: antiquewhite;
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+/*------header-----*/
+.box {
+	display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+.box .inner {
+	width: 200px;
+	height: 100px;
+	line-height: 100px;
+	font-size: 2em;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.box .inner:first-child {
+	background-color: rgb(110, 110, 110);
+	color: rgb(28, 28, 28);
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+	background-color: rgb(33, 33, 33);
+	color: antiquewhite;
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+/*----------------nav----*/ 
+.nav{
+    width:100%;
+    margin-top:5%;
+    display: flex;
+    justify-content: center;
+}
+
+#menu, #menu ul {
+  padding:0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  
+
+}
+
+#menu li {
+  display:inline-block;
+  vertical-align: top;
+  position: relative;
+  
+  
+}
+#menu li li {
+  display:inherit;
+}
+#menu a {
+  display:block;
+  padding:5px 50px;
+  text-decoration: none;
+  color:#fff;
+  font-family:arial;
+}
+#menu ul li a {
+  padding:5px 8px;
+}
+#menu ul {
+  position: absolute;
+  z-index: 1000;
+  min-width:100%;
+  white-space: nowrap;
+  text-align: left;
+
+}
+#menu ul ul {
+  left:100%;
+  top:0;
+  overflow: hidden;
+  max-width: 0;
+  min-width: 0;
+  transition: 0.3s all;
+}
+#menu ul li:hover ul {
+  max-width: 30em;
+}
+#menu ul li {
+  max-height:0;
+  overflow: hidden;
+  transition:all 0.8s;
+}
+#menu li li li {
+  max-height: inherit;
+}
+#menu li:hover li {
+  max-height: 15em;
+  overflow: visible;
+}
+
+
+/* background des liens menus */
+.violet {
+background-color: #65537A;
+background-image:linear-gradient(to bottom, #65537A 0%, #2A2333 100%);
+}
+.violet li {
+    background:#2A2333
+}
+.violet li:hover {
+    background:#65537A
+}
+.bleu {
+background-color: #729EBF;
+background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+}
+.bleu li {
+    background:#333A40
+}
+.bleu li:hover {
+    background:#729EBF
+}
+.orange {
+background-color: #F6AD1A;
+background-image:linear-gradient(to bottom, #F6AD1A 0%, #9F391A 100%);
+}
+.orange li {
+    background-color:#9F391A;
+}
+.orange li:hover {
+    background:#F6AD1A
+}
+.vert{
+background-color: #CFFF6A;
+background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
+}
+.vert li {
+    background-color:#677F35
+}
+.vert li:hover {
+    background:#CFFF6A
+}
+#menu li:hover {
+    background-image:none;
+}
+#menu li:hover a, .menu li li:hover a {
+    color:#000
+}
+#menu li:hover li a, #menu li:hover li li a {
+    color:#fff
+}
+#menu li:hover a, #menu li li:hover a, #menu li li li:hover a {
+    color:#000
+}
+/*------------------fin header--------------*/
+
+/*--------------------page tanzanie-------------------------*/
+
+.accueil_tanzanie {
+    width: 100%;
+    height: 100vh;
+    min-height: 970px;
+    background-image: url('/style/images/images_tanzanie/fond_ecran_tanzanie.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1px dotted #777;
+    padding-top: 1px;
+
+}
+.logo-tanzanie {
+    border-radius: 50%;
+    width: 180px;
+    display: block;
+    margin: 179px auto 0;
+}
+.accueil_tanzanie>h1 {
+    text-align: center;
+    font-size:80px;
+    text-shadow: 0 0 10px #000;
+    color: #f1f1f1;
+    margin-top: 10px;
+    font-family: Merienda, sans-serif;
+    padding-bottom: 5%;
+}
+.accueil_tanzanie p {
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 0 0 10px #000;
+    color: #f1f1f1;
+    margin-top: 10px;
+    font-family: Merienda, sans-serif;
+    font-weight: 900;
+}
+.corps_tanzanie h3{
+    width:100%;
+    margin: 2% 0 2% 0 ;
+    text-align: center;
+    font-family: Merienda, sans-serif;
+    text-decoration: underline;
+}
+.corps_tanzanie>p{
+    width:100%;
+    text-align: center;
+    margin-bottom:5%;
+    font-family: Merienda, sans-serif;
+}
+.corps_tanzanie span{
+    color:brown;
+    font-family: Merienda, sans-serif;
+    
+}
+
+
+/*-----------------video masssai----------------*/
+iframe{
+    width:40%;
+    margin-left:30%;
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+/*-------------------card-------*/
+section{
+    background-image: url('/style/images/images_tanzanie/kilimanjaro.png');
+    width: 80%;
+    height:auto;  
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;    
+    margin-left: 10%;
+    display:inline-block;
+    
+}
+
+@media screen and (max-width:800px){
+    section{
+        display:flex;
+        flex-direction: column;
+
+    }
+}
+article{
+    background-color:#4782c525;
+    width: 80%;
+    height:auto;  
+    margin-left: 10%;
+    display:inline-block;
+    
+}
+
+@media screen and (max-width:800px){
+    article{
+        display:flex;
+        flex-direction: column;
+
+    }
+}
+.card1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    
+    
+  }
+  .container{
+    background-color:rgba(127, 255, 212, 0.11);
+    padding: 2px 16px;
+
+  }
+.container h4 {
+    text-align: center;
+    margin: 1% 0 2% 0;
+    font-family: Merienda, sans-serif;
+    
+    
+}
+.container p{
+    font-family: Merienda, sans-serif;
+    text-align: justify;
+    margin:1% 5% 5% 5%;
+}
+
+  
+  .card1:hover {
+    box-shadow: 10px 5px 15px black;
+  }
+  
+ 
+
+  .card2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    float: right;
+    margin-top:5%;
+    margin-bottom: 5%;
+    
+  }
+  .card2:hover {
+    box-shadow: 10px 5px 15px black;
+  }
+
+  .card3 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    margin:auto;
+    margin-top:5%;
+    margin-bottom: 5%;
+    
+  }
+  .card3:hover {
+    box-shadow: 10px 5px 15px black;
+  }
