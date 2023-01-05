@@ -4,87 +4,143 @@
     padding: 0px;
     font-family: Avenir, sans-serif;
 }
-
+.entête{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+}
+.entête>img{
+    width: 200px;
+    height: 120px;
+}
 h1{
-    text-align: center;
-    font-family: 'East Sea Dokdo', cursive;
-    font-size: 8em;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3em;
 }
-h3{
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-h2{
-    padding-left: 10px;
-    font-size: xx-large;
-    color: rgb(0, 8, 255);
+.thai{
+    color: rgb(255, 0, 0);
     text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
-.argentine{
+.bangkok{
+    background-image: url('/style/images/images thailande/palais\ royal.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+h2{
+    color: greenyellow;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 4em;
+    text-align: center;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+}
+.bkk1{
     display: flex;
-    justify-content: space-between;
-    background-color: rgba(102, 214, 229, 0.874);
+    justify-content: flex-start;
+    justify-content: space-around;
+    margin-top: 60px;
+    background-color: rgba(181, 177, 177, 0.3) ;
+
+}
+.bkk1>img{
+    width: 40%;
+    height: 30%;
+    margin-top: 20px;
+    border-radius: 10%;
+}
+.bkk2{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-around;
+    background-color: rgba(181, 177, 177, 0.3) ;
+}
+.bkk2>img{
+    width: 40%;
+    height: 30%;
+    margin-top: 60px;
+    border-radius: 10%;
+}
+.sud{
+background-image: url('/style/images/images thailande/cascade1.png');
+background-size: cover;
+background-position: bottom;
+width: 100%;
+height: 300px;
+}
+.phuket{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-around;
+    background-color: rgba(181, 177, 177, 0.3) ; 
+    
+}
+.phuket>img{
+    width: 40%;
+    height: 30%;
+    margin-top: 60px;
+    border-radius: 10%;
+    
+}
+.khaosok{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-around;
+    background-color: rgba(181, 177, 177, 0.3) ;   
+}
+.khaosok>img{
+    width: 40%;
+    height: 40%;
+    margin-top: 60px;
+    border-radius: 10%;     
+}
+.nord{
+    background-image: url('/style/images/images thailande/riz.jpg');
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 200px;
+}
+.chiangmai{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-around;
+    background-color: rgba(181, 177, 177, 0.3) ;  
+}
+.chiangmai>img{
+    width: 40%;
+    height: 40%;
+    margin-top: 60px;
+    border-radius: 10%; 
+}
+.isaan{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-around;
+    background-color: rgba(181, 177, 177, 0.3) ;   
+}
+.isaan>img{
+    width: 40%;
+    height: 40%;
+    margin-top: 60px;
+    border-radius: 10%; 
+}
+.title{
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: oblique;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+}
+p{
+    width: 50%;
+    height: auto;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    
 }
 
-.buenosaires{
-    background-image: url('images argentine/buenos\ aire.jpg');
-    width: 100%;
-    height: 650px;
-    padding-top: 50px;
-}
-.txtbeunosaires{
-    background-color: rgba(240, 248, 255, 0.709);
-    width: 40%;
-    height:550px;
-    margin-left: 30px;
-    padding-top: 20px;
-    border-radius: 3%;
-}
-.patagonie{
-    background-image: url('images argentine/patagonie.jpg');
-    width: 100%;
-    height: 900px;
-    padding-top: 50px;
-}
-.txtpatagonie{
-    background-color: rgba(240, 248, 255, 0.709);
-    width: 40%;
-    height:750px;
-    margin-left: 750px;
-    padding-top: 20px;
-    border-radius: 3%;
-}
-.iguazu{
-    background-image: url('images argentine/iguazu1.jpg');
-    background-size: cover;
-    width: 100%;
-    height: 700px;
-    padding-top: 50px;
-}
-.txtiguazu{
-    background-color: rgba(240, 248, 255, 0.709);
-    width: 40%;
-    height:450px;
-    margin-left: 30px;
-    padding-top: 20px;
-    border-radius: 3%;
-}
-.ushuaia{
-    background-image: url('images argentine/ushuaia1.jpg');
-    width: 100%;
-    height: 900px;
-    padding-top: 50px;
-}
-.txtushuaia{
-    background-color: rgba(240, 248, 255, 0.709);
-    background-size: contain;
-    width: 40%;
-    height:550px;
-    margin-left: 750px;
-    padding-top: 20px;
-    border-radius: 3%;
-}
 .box {
 	display: flex;
     justify-content: center;
@@ -134,19 +190,9 @@ h2{
 /*----------------nav----*/ 
 .nav{
     width:100%;
-    margin: 0 auto;
-    background-color: rgb(120, 119, 119);
-    position: sticky;
-    top: 0px;
-    opacity: 0.7;
-    margin-top:5%;
+    margin-top: 5%;
     display: flex;
     justify-content: center;
-}
-
-nav ul{
-    list-style-type: none;
-    display: flex;
 }
 
 #menu, #menu ul {

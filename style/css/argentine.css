@@ -4,118 +4,87 @@
     padding: 0px;
     font-family: Avenir, sans-serif;
 }
-body{
-    background-image: url('images australie/earth.jpg');
-    width: 100%;
-    height: auto;
-}
+
 h1{
-    color: rgb(193, 174, 174);
     text-align: center;
-    font-family: 'Sevillana', cursive;
-    font-size: 5em;
-    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 8em;
+}
+h3{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 h2{
-    color: red;
-    font-family: 'Sevillana', cursive;
-    font-size: 4em;
+    padding-left: 10px;
+    font-size: xx-large;
+    color: rgb(0, 8, 255);
     text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
-#drapeau{
-    background-image: url('images australie/drapeau.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 100px;
-    height: 200px;
-}
-#sydney{
-padding: 20px;
-display: flex;
-justify-content: flex-start;
-
-}
-.sydneyimg{
-    background-image: url('images australie/sydney.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 350px;
-}
-.sydneytxt{
-    background-color: rgba(222, 184, 135, 0.612);
-    width: 50%;
-    height: 30%;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    border-radius: 5%;
-
-}
-#bush{
-    padding: 20px;
+.argentine{
     display: flex;
-    justify-content: flex-end;
     justify-content: space-between;
+    background-color: rgba(102, 214, 229, 0.874);
 }
-.bushimg{
-    background-image: url('images australie/bush.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
+
+.buenosaires{
+    background-image: url('/style/images/images argentine/buenos aire.jpg');
     width: 100%;
-    height: 300px;
-    
+    height: 650px;
+    padding-top: 50px;
 }
-.bushtxt{
-    background-color: rgba(222, 184, 135, 0.612);
+.txtbeunosaires{
+    background-color: rgba(240, 248, 255, 0.709);
     width: 40%;
-    height: 30%;
-    padding-left: 20px;
-    padding-right: 20px;
+    height:550px;
+    margin-left: 30px;
     padding-top: 20px;
-    border-radius: 5%;
+    border-radius: 3%;
 }
-#côte{
-    padding: 20px;
-    display: flex;
-    justify-content: flex-start;
-}
-.côteimg{
-    background-image: url('images australie/plage.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
+.patagonie{
+    background-image: url('/style/images/images argentine/patagonie.jpg');
     width: 100%;
-    height: 300px;
+    height: 900px;
+    padding-top: 50px;
 }
-.côtetxt{
-    background-color: rgba(222, 184, 135, 0.612);
-    width: 90%;
-    height: 40%;
-    padding-left: 20px;
-    padding-right: 20px;
+.txtpatagonie{
+    background-color: rgba(240, 248, 255, 0.709);
+    width: 40%;
+    height:750px;
+    margin-left: 750px;
     padding-top: 20px;
-    border-radius: 5%;
+    border-radius: 3%;
 }
-#faune{
-    padding: 20px;
-
+.iguazu{
+    background-image: url('/style/images/images argentine/iguazu1.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    padding-top: 50px;
 }
-
-
-.faunetxt{
-    background-color: rgba(222, 184, 135, 0.612);
-    width: 90%;
-    height:70%;
-    padding-left: 20px;
-    padding-right: 20px;
+.txtiguazu{
+    background-color: rgba(240, 248, 255, 0.709);
+    width: 40%;
+    height:450px;
+    margin-left: 30px;
     padding-top: 20px;
-    border-radius: 5%;
-    margin: auto;
-   
+    border-radius: 3%;
 }
-/* menu*/
-/*------header-----*/
+.ushuaia{
+    background-image: url('/style/images/images argentine/ushuaia1.jpg');
+    width: 100%;
+    height: 900px;
+    padding-top: 50px;
+}
+.txtushuaia{
+    background-color: rgba(240, 248, 255, 0.709);
+    background-size: contain;
+    width: 40%;
+    height:550px;
+    margin-left: 750px;
+    padding-top: 20px;
+    border-radius: 3%;
+}
 .box {
 	display: flex;
     justify-content: center;
@@ -165,21 +134,10 @@ justify-content: flex-start;
 /*----------------nav----*/ 
 .nav{
     width:100%;
-    margin: 0 auto;
-    background-color: rgb(120, 119, 119);
-    position: sticky;
-    top: 0px;
-    opacity: 0.7;
-    margin-top:5%;
+    margin-top: 5%;
     display: flex;
     justify-content: center;
 }
-
-nav ul{
-    list-style-type: none;
-    display: flex;
-}
-
 #menu, #menu ul {
   padding:0;
   margin: 0;
@@ -296,6 +254,3 @@ background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
     color:#000
 }
 /*------------------fin header--------------*/
-
-
-

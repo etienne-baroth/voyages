@@ -4,143 +4,118 @@
     padding: 0px;
     font-family: Avenir, sans-serif;
 }
-.entête{
-    display: flex;
-    justify-content: flex-start;
-    justify-content: space-between;
-}
-.entête>img{
-    width: 200px;
-    height: 120px;
+body{
+    background-image: url('/style/images/images australie/earth.jpg');
+    width: 100%;
+    height: auto;
 }
 h1{
-    font-family: 'Brush Script MT', cursive;
-    font-size: 3em;
-}
-.thai{
-    color: rgb(255, 0, 0);
+    color: rgb(193, 174, 174);
+    text-align: center;
+    font-family: 'Sevillana', cursive;
+    font-size: 5em;
     text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
-.bangkok{
-    background-image: url('images thailande/palais\ royal.jpg');
-    background-size: cover;
+h2{
+    color: red;
+    font-family: 'Sevillana', cursive;
+    font-size: 4em;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+}
+#drapeau{
+    background-image: url('/style/images/images australie/drapeau.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
+    padding-top: 100px;
+    height: 200px;
+}
+#sydney{
+padding: 20px;
+display: flex;
+justify-content: flex-start;
+
+}
+.sydneyimg{
+    background-image: url('/style/images/images australie/sydney.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 350px;
+}
+.sydneytxt{
+    background-color: rgba(222, 184, 135, 0.612);
+    width: 50%;
+    height: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    border-radius: 5%;
+
+}
+#bush{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+.bushimg{
+    background-image: url('/style/images/images australie/bush.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    
+}
+.bushtxt{
+    background-color: rgba(222, 184, 135, 0.612);
+    width: 40%;
+    height: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    border-radius: 5%;
+}
+#côte{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.côteimg{
+    background-image: url('/style/images/images australie/plage.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 100%;
     height: 300px;
 }
-h2{
-    color: greenyellow;
-    font-family: 'Brush Script MT', cursive;
-    font-size: 4em;
-    text-align: center;
-    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+.côtetxt{
+    background-color: rgba(222, 184, 135, 0.612);
+    width: 90%;
+    height: 40%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    border-radius: 5%;
 }
-.bkk1{
-    display: flex;
-    justify-content: flex-start;
-    justify-content: space-around;
-    margin-top: 60px;
-    background-color: rgba(181, 177, 177, 0.3) ;
+#faune{
+    padding: 20px;
 
 }
-.bkk1>img{
-    width: 40%;
-    height: 30%;
-    margin-top: 20px;
-    border-radius: 10%;
-}
-.bkk2{
-    display: flex;
-    justify-content: flex-start;
-    justify-content: space-around;
-    background-color: rgba(181, 177, 177, 0.3) ;
-}
-.bkk2>img{
-    width: 40%;
-    height: 30%;
-    margin-top: 60px;
-    border-radius: 10%;
-}
-.sud{
-background-image: url('images thailande/cascade1.png');
-background-size: cover;
-background-position: bottom;
-width: 100%;
-height: 300px;
-}
-.phuket{
-    display: flex;
-    justify-content: flex-start;
-    justify-content: space-around;
-    background-color: rgba(181, 177, 177, 0.3) ; 
-    
-}
-.phuket>img{
-    width: 40%;
-    height: 30%;
-    margin-top: 60px;
-    border-radius: 10%;
-    
-}
-.khaosok{
-    display: flex;
-    justify-content: flex-start;
-    justify-content: space-around;
-    background-color: rgba(181, 177, 177, 0.3) ;   
-}
-.khaosok>img{
-    width: 40%;
-    height: 40%;
-    margin-top: 60px;
-    border-radius: 10%;     
-}
-.nord{
-    background-image: url('images thailande/riz.jpg');
-    background-size: cover;
-    background-position: bottom;
-    width: 100%;
-    height: 200px;
-}
-.chiangmai{
-    display: flex;
-    justify-content: flex-start;
-    justify-content: space-around;
-    background-color: rgba(181, 177, 177, 0.3) ;  
-}
-.chiangmai>img{
-    width: 40%;
-    height: 40%;
-    margin-top: 60px;
-    border-radius: 10%; 
-}
-.isaan{
-    display: flex;
-    justify-content: flex-start;
-    justify-content: space-around;
-    background-color: rgba(181, 177, 177, 0.3) ;   
-}
-.isaan>img{
-    width: 40%;
-    height: 40%;
-    margin-top: 60px;
-    border-radius: 10%; 
-}
-.title{
-    color: red;
-    font-weight: bold;
-    text-decoration: underline;
-    font-style: oblique;
-    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
-}
-p{
-    width: 50%;
-    height: auto;
-    margin-left: 10px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5em;
-    
-}
 
+
+.faunetxt{
+    background-color: rgba(222, 184, 135, 0.612);
+    width: 90%;
+    height:70%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    border-radius: 5%;
+    margin: auto;
+   
+}
+/* menu*/
+/*------header-----*/
 .box {
 	display: flex;
     justify-content: center;
@@ -190,21 +165,10 @@ p{
 /*----------------nav----*/ 
 .nav{
     width:100%;
-    margin: 0 auto;
-    background-color: rgb(120, 119, 119);
-    position: sticky;
-    top: 0px;
-    opacity: 0.7;
-    margin-top:5%;
+    margin-top: 5%;
     display: flex;
     justify-content: center;
 }
-
-nav ul{
-    list-style-type: none;
-    display: flex;
-}
-
 #menu, #menu ul {
   padding:0;
   margin: 0;
@@ -321,3 +285,6 @@ background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
     color:#000
 }
 /*------------------fin header--------------*/
+
+
+
