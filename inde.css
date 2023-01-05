@@ -206,7 +206,7 @@ ul.navindia {
     align-items: flex-start;
     position: fixed;
     bottom: 1%;
-    left: 1%;
+    right: 1%;
     background-color: #60b020;
     padding-right: 5px;
     list-style-type: none;
